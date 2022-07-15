@@ -1,4 +1,5 @@
 ﻿using System;
+using Math;
 
 namespace JenkinsApp
 {
@@ -6,7 +7,11 @@ namespace JenkinsApp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            MyMath math = new MyMath();
+
+            Console.WriteLine(math.Add(10, 20));
+            Console.WriteLine(math.Multiply(10, 20));
+
             Console.ReadLine();
         }
     }
